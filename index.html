@@ -1,54 +1,87 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <!--Bootstrap stylesheet-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Christmas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container" id="container">
-        <!-- Start header -->
-        <header>
-            <nav>
-                <a href="index.html"><img src="images/logo.png" alt="image"></a>
-            </nav>
-        </header>
-        <!-- End header -->
+      <!-- Start header -->
+      <header>
+        <nav>
+          <a href="index.html"><img src="images/logo.png" alt="image" /></a>
+        </nav>
+      </header>
+      <!-- End header -->
 
-        <div>
-            <div>
-                <h1 id="christmas-title">
-                    God jul og godt nytt år!
-                </h1>
-            </div>
-
-            <div>
-                <div>
-                    <h3>En hilsen fra Gokstad Akademiet</h3>
-
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the when an unknown..</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam
-                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-                </div>
-
-                <div>
-                    <img class="nisse" src="./images/Nisse.png">
-                </div>
-
-                <br />
-
-                <button>Klikk her</button>
-            </div>
+      <div class="row justify-content-start">
+        <div class="col-6">
+          <h1 id="christmas-title">God jul og godt nytt år!</h1>
         </div>
-    </div>
-</body>
 
+        <div class="row-2 justify-content-start">
+          <!--added a class to the text-div for Bootstrap grid-->
+          <div class="col-3">
+            <h3>En hilsen fra Gokstad Akademiet</h3>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the when an unknown..
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi.
+            </p>
+          </div>
+
+          <div class="col-6 offset-md-6">
+            <img class="nisse" src="./images/Nisse.png" />
+          </div>
+
+          <br />
+          <div class="row-3 justify-content-start">
+              <button onclick="myFunction()" class="btn btn-primary col-6">
+                Klikk her
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Javascript for bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="--Javascript" src="JS/index.js" id="myFunction"></script>
+  </body>
 </html>
